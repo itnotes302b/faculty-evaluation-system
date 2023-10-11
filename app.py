@@ -9,8 +9,8 @@ import joblib
 
 # load the model from disk
 # filename = 'nlp_model.pkl'
-clf = pickle.load(open("/home/pranjal/pythonpratical/pro/NLP-Deployment-Heroku-master/nlp_model.pkl",'rb'))
-cv=pickle.load(open('pro/NLP-Deployment-Heroku-master/tranform.pkl','rb'))
+clf = pickle.load(open("nlp_model.pkl",'rb'))
+cv=pickle.load(open('tranform.pkl','rb'))
 app = Flask(__name__)
 
 @app.route('/')
